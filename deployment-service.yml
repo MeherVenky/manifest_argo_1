@@ -17,7 +17,7 @@ spec:
       - name: tetris
         image: mehervenkay/netflix:appimg
         ports:
-        - containerPort: 3000   # Use port 3000
+        - containerPort: 8080   # Use port 3000
 
 ---
 apiVersion: v1
@@ -29,6 +29,6 @@ spec:
     app: tetris
   ports:
   - protocol: TCP
-    port: 8080                # Expose port 80
-    targetPort: 3000
+    port: 80                # Expose port 80
+    targetPort: 8080
   type: LoadBalancer
