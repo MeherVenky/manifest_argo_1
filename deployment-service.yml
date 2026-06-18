@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: tetris
-        image: mehervenkay/cycle
+        image: mehervenkay/netflix:myapp
         ports:
         - containerPort: 3000   # Use port 3000
 
